@@ -10,7 +10,8 @@ pipeline{
   stages{
     stage('asd'){
       steps{
-        helper()
+        println('asdasdasdasd')
+        //helper()
       }
     }
   }
