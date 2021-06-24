@@ -13,9 +13,9 @@ pipeline{
             Job job = currentBuild.rawBuild.parent
             println(job.definition.scm)
             helper()
-}
-          helper()
+         }
       }
     }
   }
+}
 }
