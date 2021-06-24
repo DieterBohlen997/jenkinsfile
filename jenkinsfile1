@@ -6,7 +6,8 @@ pipeline{
   stages{
     stage('asd'){
       steps{
-        println(Job.definition.scm)
+        Job job = currentBuild.rawBuild.parent
+        println(job.definition.scm)
       }
     }
   }
