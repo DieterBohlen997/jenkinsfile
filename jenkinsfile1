@@ -1,0 +1,9 @@
+import hudson.model.Job
+
+
+pipeline{
+  stage('asd'){
+    println(Job.definition.scm)
+  }
+
+}
