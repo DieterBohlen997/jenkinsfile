@@ -11,7 +11,7 @@ pipeline{
           println('asdasdasdasd')
           def helper = {
             Job job = currentBuild.rawBuild.parent
-            println(job.definition.scm.getDescriptor()) //getAuthorOrCommiter().toString())
+            println(job.definition.scm.getDescriptor().toString()) //getAuthorOrCommiter().toString())
          }
         helper()
       }
