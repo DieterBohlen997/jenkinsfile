@@ -10,8 +10,8 @@ pipeline{
         script{
           println('asdasdasdasd')
           def helper = {
-            Job job = currentBuild.rawBuild.parent
-            println(job.definition.scm)
+            //Job job = currentBuild.rawBuild.parent
+            println(job.definition.scm.branches)
          }
         helper()
       }
