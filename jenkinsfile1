@@ -2,6 +2,7 @@ import hudson.model.Job
 
 
 pipeline{
+  agent any
   stages{
     stage('asd'){
       steps{
